@@ -9,30 +9,10 @@ pipeline{
   stages{
     step
     stage('Build'){
-      step
+      steps
       {
         echo " Build"
       sh 'bundle install'
-      }
-    }
-        stage('Test'){
-      step
-      {
-        echo " Test"
- 
-      }
-    }
-        stage('UAT'){
-      step
-      {
-        echo " UAT"
-     
-      }
-    }    stage('Prod'){
-      step
-      {
-        echo " Prod"
- 
       }
     }
     
