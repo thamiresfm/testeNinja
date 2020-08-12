@@ -1,10 +1,10 @@
 pipeline{
-  // agent{
-  //   docker{
-  //     image 'ruby'
-  //   }
-  // }
-  agent any
+  agent{
+    docker{
+      image 'ruby'
+    }
+  }
+ 
 
   stages{
    
