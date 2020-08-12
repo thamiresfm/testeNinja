@@ -7,18 +7,34 @@ pipeline{
   agent any
 
   stages{
+    step
     stage('Build'){
-      echo " Build"
+      step
+      {
+        echo " Build"
       sh 'bundle install'
+      }
     }
-    stage('Teste'){
-      echo " Teste"
+        stage('Test'){
+      step
+      {
+        echo " Test"
+ 
+      }
     }
-    stage('UAT'){
-      echo " UAT"
+        stage('UAT'){
+      step
+      {
+        echo " UAT"
+     
+      }
+    }    stage('Prod'){
+      step
+      {
+        echo " Prod"
+ 
+      }
     }
-    stage('Prod'){
-      echo " Prod"
-    }
+    
   }
 }
