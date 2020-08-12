@@ -12,6 +12,7 @@ pipeline{
       steps
       {
         echo " Build or Resolver dependencies"
+        sh "rm -f Gemfile.lock"
         sh 'bundle install'
       }
     }
